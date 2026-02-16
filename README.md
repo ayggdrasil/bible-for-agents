@@ -36,11 +36,32 @@ Most teams do not fail because of model quality. They fail because execution is 
 - start with a complete structure, not a blank repo
 - enforce standards without building internal process docs from scratch
 
+## One-command install (CLI and IDE)
+
+Run this in Terminal, or in your IDE terminal (VS Code, Cursor, JetBrains):
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/ayggdrasil/bible-for-agents/main/bootstrap.sh)
+```
+
+Install to a custom path and overwrite existing installation:
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/ayggdrasil/bible-for-agents/main/bootstrap.sh) --target "$HOME/CodexAgentKit" --force
+```
+
+After install:
+
+1. Open `~/CodexAgentKit`
+2. Double-click `new_project.command`
+3. Enter your project name
+
 ## What you get
 
 - `PROJECT_TEMPLATE/` with advanced loop, gates, evals, recovery, escalation
 - `new_project.command` for 1-click project creation on macOS
 - `install.sh` for quick installation to any local directory
+- `bootstrap.sh` for one-command GitHub installation
 
 ## Quick start (download ZIP)
 
