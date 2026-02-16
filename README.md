@@ -1,15 +1,46 @@
 # bible-for-agents
-Instant multi-agent Codex starter kit for planners, builders, reviewers, and researchers—hardened loops, gates, evals, escalation, recovery, and installer bundled so you download this before anything else to run premium agent workflows.
+If you run coding agents, install this first.
 
-Production-ready multi-agent template for Codex workflows:
+This project is not a prompt pack. It is an operating system for agent-driven delivery:
 
-Plan → Build → Review → Research (if needed) → Patch → Verify
+Plan -> Build -> Review -> Research (if needed) -> Patch -> Verify
+
+## What this project means
+
+Most teams do not fail because of model quality. They fail because execution is inconsistent:
+
+- unclear handoffs
+- missing quality gates
+- weak rollback and escalation rules
+- no evidence trail for what was done and why
+
+`bible-for-agents` standardizes that chaos into a repeatable system your team can trust.
+
+## Concrete outcomes
+
+- Faster execution with fewer rewrite cycles
+- Higher release confidence from required gates and eval thresholds
+- Lower operational risk from escalation and recovery playbooks
+- Better decision quality because every run leaves an auditable log
+
+## Who should use this
+
+- founders and operators shipping with small teams
+- developers managing multi-agent workflows
+- non-developers who need a safe, structured way to run coding agents
+
+## Why teams adopt it quickly
+
+- install in minutes with `install.sh`
+- create projects in one click with `new_project.command`
+- start with a complete structure, not a blank repo
+- enforce standards without building internal process docs from scratch
 
 ## What you get
 
 - `PROJECT_TEMPLATE/` with advanced loop, gates, evals, recovery, escalation
-- `new_project.command` (double-click launcher on macOS)
-- `install.sh` (install this kit anywhere)
+- `new_project.command` for 1-click project creation on macOS
+- `install.sh` for quick installation to any local directory
 
 ## Quick start (download ZIP)
 
@@ -31,28 +62,21 @@ cd codex-agent-orchestration-kit
 bash install.sh
 ```
 
-## Create a project
+## Create your first project
 
 - Double-click `new_project.command`
-- New project path:
-  - `~/CodexAgentKit/PROJECTS/<project-name>`
+- Project output path: `~/CodexAgentKit/PROJECTS/<project-name>`
+- Fill first: `spec/PRD.md`, `spec/Interfaces.md`, `spec/TestPlan.md`, `spec/Evals.md`
 
-## First files to fill
-
-- `spec/PRD.md`
-- `spec/Interfaces.md`
-- `spec/TestPlan.md`
-- `spec/Evals.md`
-
-## Core docs in template
+## Core system docs
 
 - Tool policy: `agents/tool_policy.md`
-- Loop: `loops/loop.md`
-- Gates: `loops/gates.md`
+- Loop definition: `loops/loop.md`
+- Quality gates: `loops/gates.md`
 - Handoff contract: `loops/handoff.md`
-- Escalation: `loops/escalation.md`
-- Recovery: `loops/recovery.md`
-- Run evidence: `notes/run_log.md`
+- Escalation rules: `loops/escalation.md`
+- Recovery playbook: `loops/recovery.md`
+- Run evidence log: `notes/run_log.md`
 
 ## Publish to GitHub
 
