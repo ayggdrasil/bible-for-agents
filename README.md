@@ -63,6 +63,38 @@ After install:
 - `install.sh` for quick installation to any local directory
 - `bootstrap.sh` for one-command GitHub installation
 
+## Update: 0001Codex_setup
+
+This repository was expanded from a simple template into a full multi-agent coding operating model.
+
+- Multi-agent roles: `Planner`, `Builder`, `Reviewer`, `Researcher`
+- Fixed execution loop: `Plan -> Build -> Review -> Research (if needed) -> Patch -> Verify`
+- Artifact-first workflow: specs, interfaces, ADRs, test plans, perf plans, and logs
+- Reuse-first setup: clone once, create many projects from `PROJECT_TEMPLATE/`
+- Non-developer onboarding: 1-click project creation with `new_project.command`
+
+### Capability map
+
+- `agents/roles/*`: role responsibilities and scope boundaries
+- `agents/prompts/*`: task prompts for planning, design, review, research
+- `agents/checklists/*`: quality, performance, and security checklists
+- `agents/tool_policy.md`: tool permission model and approval rules
+- `loops/loop.md`: execution states and transition rules
+- `loops/gates.md`: mandatory quality gates before release
+- `loops/handoff.md`: required handoff contract between agents
+- `loops/escalation.md`: human-in-the-loop escalation triggers
+- `loops/recovery.md`: rollback and recovery playbook
+- `spec/Evals.md`: quantitative pass/fail thresholds
+- `spec/ContextBudget.md`: context and memory budget controls
+- `spec/DeliveryPolicy.md`: branch, CI, and merge requirements
+- `notes/run_log.md`: auditable evidence for each run
+
+### Why this matters
+
+- You reduce rework by locking interfaces and quality gates early.
+- You reduce risk with explicit escalation and recovery rules.
+- You improve team clarity because every agent step leaves evidence.
+
 ## Quick start (download ZIP)
 
 1. Download this repository ZIP from GitHub and unzip it.
