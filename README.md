@@ -56,6 +56,12 @@ After install:
 2. Double-click `new_project.command`
 3. Enter your project name
 
+If `AGENT.md` looks empty in an old project, regenerate from the latest template:
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/ayggdrasil/bible-for-agents/main/bootstrap.sh) --target "$HOME/CodexAgentKit" --force
+```
+
 ## What you get
 
 - `PROJECT_TEMPLATE/` with advanced loop, gates, evals, recovery, escalation
